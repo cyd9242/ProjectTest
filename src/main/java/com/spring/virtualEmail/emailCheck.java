@@ -19,7 +19,7 @@ public class emailCheck {
 		String host = "smtp.gmail.com"; // smtp 서버
 		String subject = "가상홈페이지에 요청하신 인증번호를 알려드립니다.";
 		String fromName = "가상홈페이지 관리자";
-		String from = "yongdeuk4098@gmail.com"; // 보내는 메일
+		String from = "email"; // 보내는 메일
 		String to = vEmail;
 		String content = "요청하신 인증번호를<br/>발송해드립니다.<br/><br/> 아래의 인증번호를 인증번호 입력창에 입력해 주세요.<br/><br/>인증번호 [" + authNum + "]<br/><br/>가상홈페이지를 이용해 주셔서 감사합니다.<br/>더욱 편리한 서비스를 제공하기 위해 항상 최선을 다하겠습니다.";
 		System.out.println("to : " + to);
@@ -37,7 +37,7 @@ public class emailCheck {
 			Session mailSession = Session.getInstance(props, 
 					new javax.mail.Authenticator() {
 						protected PasswordAuthentication getPasswordAuthentication() {
-							return new PasswordAuthentication("yongdeuk4098@gmail.com", "wkwjs@4098");
+							return new PasswordAuthentication("email", "password");
 						}
 			});
 			
