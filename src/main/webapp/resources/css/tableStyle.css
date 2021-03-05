@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+	/* 로그인 */
+	table.loginTableStyle {
+		border-collapse: collapse;
+		text-align: left;
+		line-height: 1.5;
+		margin: 20px 10px;
+	}
+	table.loginTableStyle thead th {
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		background: #98ff98;
+		padding: 10px;
+		font-size:20px;
+		font-weight: bold;
+		vertical-align: top;
+		font-weight: bold;
+		color:white;
+		font-family:sans-serif;
+		
+	}	
+	table.loginTableStyle tbody th {
+		width: 100px;
+		font-weight: bold;
+		color:white;
+		font-family:sans-serif;
+		vertical-align: center;
+		background: #98ff98;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+	table.loginTableStyle td {
+		width: 200px;
+		font-weight: bold;
+		color:white;
+		font-family:sans-serif;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+		
+	/* 회원가입 */
+	table.signUpTableStyle {
+		border:none;
+	}
+	table.signUpTableStyle tbody th {
+		width: 120px;
+		border:none;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;		
+		background: #98ff98;
+		font-weight: bold;
+		color:white;
+		font-family:sans-serif;
+	}
+	table.signUpTableStyle tbody td {
+		width: 140px;
+		border:none;
+		font-family:sans-serif;
+	}
+	
+	/* 회원정보 인증 테이블 */
+	table.MemberInformationCertificationTableStyle {
+		border-collapse: collapse;
+		border:none;
+	}
+	table.MemberInformationCertificationTableStyle tbody th{
+		width: 100px;
+		border-top-left-radius:10px;
+		border-bottom-left-radius:10px;
+		border:none;
+		vertical-align: center;
+		background: #98ff98;
+		font-weight: bold;
+		color:white;
+		font-family:sans-serif;
+		font-size:18px;
+		padding: 5px;
+	}
+	table.MemberInformationCertificationTableStyle tbody td{
+		font-weight:250;
+		border:none;
+		font-weight:300;
+		width: 180px;
+		vertical-align: center;
+		color:white;
+		font-family:sans-serif;
+	}
+	
+	/* 회원정보 수정 테이블 */
+	table.ModifyingMemberInformationTableStyle {
+		border:none;
+	}
+	table.ModifyingMemberInformationTableStyle tbody th{
+		width: 130px;
+		border: none;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		vertical-align: center;
+		background: #98ff98;
+		font-weight: bold;
+		color: white;
+		font-family: sans-serif;
+	}
+	table.ModifyingMemberInformationTableStyle tbody td{
+		border:none;
+		width: 150px;
+		vertical-align: center;
+		color:white;
+		font-family:sans-serif;
+	}
+	
+	/* 전화번호로 아이디 찾기 테이블*/
+	table.TelIdFindTableStyle{
+		border-collapse: collapse;
+		border:none;
+	}
+	table.TelIdFindTableStyle tbody th{
+		width: 120px;
+		vertical-align: center;
+		border:none;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;		
+		background: #98ff98;
+		font-weight: bold;
+		color:white;
+		font-family:sans-serif;
+	}
+	table.TelIdFindTableStyle tbody td{
+		border:none;
+		font-weight:300;
+		width: 95px;
+		color:white;
+		font-family:sans-serif;
+	}
+	
+	
+	/* 전화번호로 아이디 찾기 결과 테이블 */
+	table.telIdFindResultTableStyle {
+		border-collapse: collapse;
+		border-top: 1px solid #ccc;
+		border-left: none;
+		border-right: 1px solid #ccc;
+		border-bottom: none;
+		vertical-align: center;
+		margin: 20px 10px;
+	}
+	table.telIdFindResultTableStyle tbody th{
+		background: #98ff98;
+		color:white;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc; 
+		vertical-align: center;
+		font-weight: bold;
+		font-family:sans-serif;
+		font-size:18px;
+		width:120px;
+	}
+	table.telIdFindResultTableStyle tbody td{
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc; 
+		vertical-align: center;
+		font-weight:300;
+		font-family:sans-serif;
+		font-size:15px;
+		width: 140px;
+	}
+	
+	
+	/* 이메일로 아이디 찾기 테이블*/
+	table.EmailIdFindTableStyle{
+		border: none;
+	}
+	table.EmailIdFindTableStyle tbody th{
+		width: 100px;
+		vertical-align: center;
+		border:none;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;		
+		background: #98ff98;
+		font-weight: bold;
+		color:white;
+		font-family:sans-serif;
+	}
+	table.EmailIdFindTableStyle tbody td{
+		border:none;
+		font-weight:300;
+		width: 120px;
+		color:white;
+		font-family:sans-serif;
+	}
+	
+	/* 이메일로 아이디 찾기 결과 테이블 */
+	table.EmailIdFindResultTableStyle {
+		border-collapse: collapse;
+		border-top: 1px solid #ccc;
+		border-left: none;
+		border-right: 1px solid #ccc;
+		border-bottom: none;
+		vertical-align: center;
+		margin: 20px 10px;
+	}
+	table.EmailIdFindResultTableStyle tbody th{
+		background: #98ff98;
+		color:white;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc; 
+		vertical-align: center;
+		font-weight: bold;
+		font-family:sans-serif;
+		font-size:18px;
+		width:120px;
+	}
+	table.EmailIdFindResultTableStyle tbody td{
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc; 
+		vertical-align: center;
+		font-weight:300;
+		font-family:sans-serif;
+		font-size:15px;
+		width: 140px;
+	}
+	
+	
+	/* 이메일로 비밀번호 찾기  테이블 */
+	table.EmailPasswordFindTableStyle{
+		border-collapse: collapse;
+		border:none;
+	}
+	table.EmailPasswordFindTableStyle tbody th{
+		width: 100px;
+		vertical-align: center;
+		border:none;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;		
+		background: #98ff98;
+		font-weight: bold;
+		color:white;
+		font-family:sans-serif;
+		padding:5px;
+	}
+	table.EmailPasswordFindTableStyle tbody td{
+		border:none;
+		font-weight:300;
+		width: 350px;
+		color:white;
+		font-family:sans-serif;
+	}
+	
+
+	/* 전화번호로 비밀번호 찾기  테이블 */
+	table.TelPasswordFindTableStyle{
+		border:none;
+	}
+	table.TelPasswordFindTableStyle tbody th{
+		width: 100px;
+		vertical-align: center;
+		border:none;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;		
+		background: #98ff98;
+		font-weight: bold;
+		color:white;
+		font-family:sans-serif;
+		padding:5px;
+	}
+	table.TelPasswordFindTableStyle tbody td{
+		border:none;
+		font-weight:300;
+		width: 280px;
+		color:white;
+		font-family:sans-serif;
+	}
+	
+	
+	/* 홈페이지 로그인후 로그인창 테이블 */
+	table.MemberInformationTableStyle {
+		border-collapse: collapse;
+		background: #ebf4fa;
+		border: 1px solid rgba(0, 0, 0, 0.8);
+	}
+	
+	table.MemberInformationTableStyle tbody td{
+		border: 1px solid rgba(0, 0, 0, 0.8);
+		width:250px;
+		font-size: 20px;
+		font-family:sans-serif;
+		background: #f0f8ff;
+	}
+	
+	/* 홈페이지 게스트 로그인 아이디/비밀번호 찾기 회원가입 테이블  */
+	table.notUserTableStyle {
+		border:none;
+	}
+	table.notUserTableStyle tbody td {
+		border:none;
+		width: 130px;	
+		background: #98ff98;
+		font-weight: bold;
+		color:white;
+		font-family:sans-serif;
+	}
+	
+	/* 자유게시판 테이블  */
+	table.bbsListTableStyle{
+		width:90%;
+		border-collapse: collapse;
+		border:none;
+	}
+	table.bbsListTableStyle thead td{
+		background: #ccc;
+		height:40px;
+	}
+	table.bbsListTableStyle td{
+		border-top: 1px solid #ccc;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid #ccc;
+	}
+
+	/* 내용보기 테이블 */
+	table.bbsContentTableStyle {
+		width:95%;
+		border-collapse: collapse;
+	}
+	table.bbsContentTableStyle td{
+		border: 1px solid #ccc;
+		font-family:sans-serif;
+	}
+	
+	/* 특정 멤버 게시판 테이블 */
+	table.bbsMemberListTableStyle{
+		width:80%;
+		border-collapse: collapse;
+		border:none;
+	}
+	table.bbsMemberListTableStyle thead td{
+		background: #ccc;
+		height:40px;
+	}
+	table.bbsMemberListTableStyle td{
+		border-top: 1px solid #ccc;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid #ccc;
+	}
+	
+	/* 특정 멤버 댓글 테이블 */
+	table.bbsMemberCommentListTableStyle{
+		width:80%;
+		border-collapse: collapse;
+		border:none;
+	}
+	table.bbsMemberCommentListTableStyle thead td{
+		background: #ccc;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		height:40px;
+	}
+	table.bbsMemberCommentListTableStyle tbody td{
+		border-top: 1px solid #ccc;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid #ccc;
+	}
+	
+	/* 게시글 쓰기 테이블 */
+	table.writeTableStyle{
+		border-collapse: collapse;
+		width:95%;
+	}
+	table.writeTableStyle thead td{
+		border: 1px solid #ccc;
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+		background: #D2D2FF;
+		height:40px;
+	}
+	table.writeTableStyle tbody th{
+		border: 1px solid #ccc;
+		font-family:sans-serif;
+		font-weight:bold;
+		width:10%;
+		background: white;
+	}
+	table.writeTableStyle tbody td{
+		border: 1px solid #ccc;
+		font-family:sans-serif;
+		background: white;
+	}
+	
+	/* 게시글 답글 테이블 */
+	table.replyTableStyle{
+		border-collapse: collapse;
+		width:95%;
+	}
+	table.replyTableStyle thead td{
+		border: 1px solid #ccc;
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+		background: #FFEFD5;
+		height:40px;
+	}
+	table.replyTableStyle tbody th{
+		border: 1px solid #ccc;
+		font-family:sans-serif;
+		font-weight:bold;
+		width:10%;
+		background: white;
+	}
+	table.replyTableStyle tbody td{
+		border: 1px solid #ccc;
+		font-family:sans-serif;
+		background: white;
+	}
+	
+	/* 게시글 수정 테이블 */
+	table.modifyTableStyle{
+		border-collapse: collapse;
+		width:95%;
+	}
+	table.modifyTableStyle thead td{
+		border: 1px solid #ccc;
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+		background: #E8F5FF;
+		height:40px;
+	}
+	table.modifyTableStyle tbody th{
+		border: 1px solid #ccc;
+		font-family:sans-serif;
+		font-weight:bold;
+		width:10%;
+		background: white;
+	}
+	table.modifyTableStyle tbody td{
+		border: 1px solid #ccc;
+		font-family:sans-serif;
+		background: white;
+	}
+	
+	table.CommentList {
+		border: none;
+		width:95%;
+	}
+	table.CommentList thead td{
+		 border:none;
+		 font-size: 18px;
+	}
+	table.CommentList tbody td{
+		border: none;
+	}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+	
+	.cal_top{
+		text-align: center;
+		font-size: 5x;
+	}
+	.cal{
+		text-align: center; 
+	}
+	table.calendar{
+		border: 1px solid black;
+		display: inline-table;
+		text-align: left;
+	}
+	table.calendar td{
+		vertical-align: top;
+		background: #d1d0ce;
+		color:black;
+		text-align:center;
+		border: 1px solid skyblue;
+		width: 200px;
+	}
+	
+	table.calendar td:hover{
+		border: 1px solid white;
+		
+	}

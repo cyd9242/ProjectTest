@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<security:http pattern="/**/*.js" security="none" />
+	<security:http pattern="/**/*.css" security="none" />
+	<security:http pattern="/image/**" security="none" />
+	<security:http auto-config="true" use-expressions="true">
+	<security:intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')" />
+	<security:intercept-url pattern="/virtualHomePage/MemberInformation/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"/>
+	<security:intercept-url pattern="/virtualHomePage/virtualBulletinBoard/write/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"/>
+	<security:intercept-url pattern="/virtualHomePage/virtualBulletinBoard/contentView/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"/>
+	<security:intercept-url pattern="/virtualHomePage/signUp/**" access = "isAnonymous()"/>
+	<security:intercept-url pattern="/virtualHomePage/loginPage/**" access = "isAnonymous()"/>
+	<security:intercept-url pattern="/**" access="permitAll"/>
+	<security:intercept-url pattern="/image/**" access="permitAll" />
+		<security:form-login 
+			authentication-failure-url = "/virtualHomePage/loginPage?fail"
+			login-page = "/virtualHomePage/loginPage"
+			default-target-url = "/virtualHomePage"
+			username-parameter="j_username"
+			password-parameter="j_password"
+			/>
+		<security:session-management>
+			<security:concurrency-control max-sessions = "1"/>
+		</security:session-management>
+		<security:logout 
+			logout-success-url="/virtualHomePage" 
+			delete-cookies=""/>
+			
+	</security:http>
+	
+	<bean name = "dataSource" class = "org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name = "driverClassName" value = "oracle.jdbc.driver.OracleDriver" />
+		<property name = "url" value = "jdbc:oracle:thin:@localhost:1521:orcl" />
+		<property name = "username" value = "scott" />
+		<property name = "password" value ="mint4098" />
+	</bean>
+	<security:authentication-manager>
+		<security:authentication-provider>
+			<security:jdbc-user-service
+                data-source-ref="dataSource"
+                users-by-username-query="select vId as username, vPwd as password, enabled from virtual_member where vId = ?"
+                authorities-by-username-query="select vId as username, role_name as authority from user_roles where vId = ?"
+            />
+		</security:authentication-provider>
+		
+	</security:authentication-manager>
+</beans>

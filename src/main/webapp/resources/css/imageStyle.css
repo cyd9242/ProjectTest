@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+	.HomeImgeStyle{
+		width:100%;
+		height: auto;
+		max-width:350px;
+		margin:5px 10px;
+	}
+	
+	.virtualHomePageImageSytle{
+		height: auto;
+		max-width:130px;
+		margin:5px 10px;
+	}
+	
+	.signUpImageStyle{
+		height: auto;
+		max-width:350px;
+		margin:5px 10px;
+	}
+	
+	.idFindImageStyle{
+		width:75%;
+		height: auto;
+		max-width:250px;
+		margin:5px 10px;
+	}
+	
+	.TelIdFindFormImageStyle{
+		position:absolute;
+		width:50%;
+		height: auto;
+		max-width:250px;
+		margin:0px 10px;
+	}
+	
+	.EmailIdFindFormImageStyle{
+		position:absolute;
+		width:50%;
+		height: auto;
+		max-width:250px;
+		margin:0px 10px;
+	}
+	.IdFindFormImageStyle{
+		position:absolute;
+		width:50%;
+		height: auto;
+		max-width:250px;
+		margin:0px 10px;
+	}
+	.passwordFindFormImageStyle{
+		position:absolute;
+		width:50%;
+		height: auto;
+		max-width:250px;
+		margin:0px 10px;
+	}
+	
+	.loginImageStyle{
+		width:50%;
+		height: auto;
+		max-width:300px;
+		margin:5px 10px;
+	}
+	
+	.EandTImageStyle{
+		max-width:30px;
+		position:relative;
+		top:5px;
+	}
+	
+	.MemberInformationImageStyle{
+		height: auto;
+		max-width:350px;
+		margin:5px 10px;
+	}
+	
+	.logoutImageStyle{
+		position:relative;
+		top:5px;
+		max-width:25px;
+	}
+	
+	.logInImageStyle{
+		position:relative;
+		top:3px;
+		max-width:25px;
+	}
+	
+	.LockImageStyle{
+		position:relative;
+		top:2px;
+		max-width:10px;
+	}
+	.LockImageStyle1{
+		position:relative;
+		top:1px;
+		max-width:10px;
+	}
+	
+	.moonImageStyle{
+		position:relative;
+		top:3px;
+		text-align:left;
+		max-width:29px;
+	}
+	
+	.sunImageStyle{
+		position:relative;
+		top:3px;
+		text-align:left;
+		max-width:30px;
+	}
+	
+	.topImageStyle{
+		max-width:30px;
+	}
+	
+	.writeImageStyle{
+		width:20px;
+	}
+	
+	.backgroundImageStyle{
+		width:300px;
+		height: 50px;
+	}

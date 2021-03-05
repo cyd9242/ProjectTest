@@ -1,0 +1,645 @@
+@charset "UTF-8";
+
+	.button1{
+		width:95%;
+		background: #FFEB46;
+		border: 1px solid #dcdcdc;
+		text-align: center;
+		padding: 8px;
+		transition: all 0.5s;
+		cursor: pointer;
+		font-size:15px;
+		font-family:sans-serif;
+		font-weight: bold;
+	}
+	.button1 span {
+		background:none;
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+	}
+	.button1 span:after {
+		content: '\00bb';
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		right: -20px;
+		transition: 0.5s;
+	}
+	.button1:hover span {
+		padding-right: 25px;
+	}
+	.button1:hover span:after {
+		opacity: 1;
+		right: 0;
+	}
+	.button1:hover{
+		background: yellow;
+	}
+	
+	.button2{
+		font-size: 13px;
+		font-family:sans-serif;
+		text-align:center;
+		color:black;
+		width:auto;
+		background: none;
+		cursor:pointer;
+		border:none;
+		
+	}
+	.button2:hover{
+		text-decoration:underline;
+	}
+	
+	.loginbutton{		
+		background-color:#98ff98;
+		display: inline-block;
+		border: none;
+		border-radius: 10px;
+		color:white;
+		font-weight: bold;
+		font-size:20px;
+		font-family:sans-serif;
+		width:52%;
+		cursor: pointer;
+	}
+	
+	.MemberInformationCertificationbutton{
+		background:#98ff98;
+		display: inline-block;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:bold;
+		font-size:20px;
+		font-family:sans-serif;
+		width:52%;
+		cursor:pointer;
+	}
+	
+	.signUpbutton{
+		background-color:#98ff98;
+		display: inline-block;
+		border: none;
+		border-radius: 10px;
+		color:white;
+		font-weight: bold;
+		font-size:20px;
+		width:100%;
+		font-family:sans-serif;
+	}
+	
+	.logOutbutton{
+		background: white;
+		border: none;
+		border-radius: 10px;
+		color:black;
+		font-size:16px;
+		width:auto;
+		font-family:sans-serif;
+		cursor: pointer;
+	}
+	
+	.idCheckbutton{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:bold;
+		font-size:12px;
+		font-family:sans-serif;
+		width:100%;
+		
+	}
+	
+	.NickNameCheckbutton{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:bold;
+		font-size:12px;
+		font-family:sans-serif;
+		width:100%;
+		
+	}
+	
+	.postCodebutton{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:bold;
+		font-size:13px;
+		font-family:sans-serif;
+		width:100%;
+	}
+	
+	.ModifyingPostCodebutton{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:bold;
+		font-size:15px;
+		font-family:sans-serif;
+		width:100%;
+		cursor: pointer;
+	}
+	
+	.TelIdFindbutton{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight: bold;
+		font-size:20px;
+		font-family:sans-serif;
+		width:100%;
+	}
+	
+	.EmaillIdFindbutton{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:bold;
+		font-size:20px;
+		font-family:sans-serif;
+		width:100%;
+	}
+	
+	.TelPasswordFindbutton{
+		background: #98ff98;
+		border: none;
+		border-radius: 10px;
+		color: white;
+		text-align: center;
+		font-weight: bold;
+		font-size: 20px;
+		font-family: sans-serif;
+		width: 100%;
+	}
+	
+	.EmailPasswordFindbutton{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:bold;
+		font-size: 20px;
+		font-family:sans-serif;
+		cursor: pointer;
+		width:100%;
+	}
+	
+	.EmailAuthbutton{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:500;
+		font-size:15px;
+		font-family:sans-serif;
+		width:100%;
+		cursor: pointer;
+	}
+	
+	.EmailAuthbutton1{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:500;
+		font-size:15px;
+		font-family:sans-serif;
+		width:55%;
+		cursor: pointer;
+	}
+	
+	.EandTbutton{
+		font-size:20px;
+		border: none;
+		background: none;
+		width:100%;
+		cursor: pointer;
+	}
+	
+	.EmailAuthCheckbutton{
+		background:#c2dfff;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:bold;
+		font-size:15px;
+		font-family:sans-serif;
+		cursor: pointer
+	}
+	
+	.idCheckResultbutton{
+		background:darkgray;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:500;
+		font-size:18px;
+		font-family:sans-serif;
+		width:70px;
+	}
+	
+	.NickNameCheckResultbutton{
+		background:darkgray;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:500;
+		font-size:18px;
+		font-family:sans-serif;
+		width:70px;
+	}
+	
+	.TelPasswordReSetUpbutton{
+		background-color:#98ff98;
+		display: inline-block;
+		border: none;
+		border-radius: 10px;
+		color:white;
+		font-weight: bold;
+		font-size:20px;
+		font-family:sans-serif;
+		width:52%;
+		cursor: pointer;
+	}
+	
+	.EmailPasswordReSetUpbutton{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:bold;
+		font-size:20px;
+		font-family:sans-serif;
+		width: 52%;
+	}
+	
+	.NotFindSignUpbutton{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:500;
+		font-size:15px;
+		font-family:sans-serif;
+		width:80px;
+	}
+	
+	.memberInformationbutton{
+		background: white;
+		border:none;
+		border-radius: 10px;
+		color:black;
+		font-size:15px;
+		font-family:sans-serif;
+		cursor:pointer;
+		width:auto;
+	}
+	
+	.ModifyingMemberInformationbutton{
+		background-color:#98ff98;
+		border: none;
+		border-radius: 10px;
+		color:white;
+		font-weight: bold;
+		font-size:20px;
+		width:100%;
+		font-family:sans-serif;
+		cursor: pointer;
+	}
+	
+	.MemberInformationbutton{
+		background:none;
+		border: none;
+		width:100%;
+		font-size:20px;
+		font-family:sans-serif;
+		cursor:pointer;
+	}
+	
+	.membershipWithdrawalbutton{
+		background-color:#98ff98;
+		border: none;
+		border-radius: 10px;
+		color:white;
+		font-weight: bold;
+		font-family:sans-serif;
+		width: 100%;
+		cursor:pointer;
+	}
+	
+	.modifyingEmailbutton{
+		background:#c2dfff;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:500;
+		font-size:15px;
+		font-family:sans-serif;
+		cursor: pointer;
+	}
+	
+	.memberEmailbutton{
+		background:#98ff98;
+		border:none;
+		border-radius:10px;
+		color:white;
+		font-weight:500;
+		font-size:15px;
+		font-family:sans-serif;
+		cursor:pointer;
+	}
+	
+	.DarkModebutton{
+		position: fixed;	/* 포지션 고정  */
+		right: 8%;
+		bottom: 5px;
+		z-index: 9999;
+		border:none;
+		background: #98ff98;
+		color: white;
+		border-radius:10px;
+		font-weight:bold;
+		font-size:20px;
+		font-family:sans-serif;
+		width:240px;
+		text-align:center;
+	}
+	.DarkModebutton:hover{
+		background: darkgray;
+	}
+	
+	.Topbutton{
+		position: fixed;	/* 포지션 고정  */
+		right: 2%;
+		bottom: 5px;
+		z-index: 9999;
+		border:none;
+		background: #98ff98;
+		border-radius:50%;
+		cursor: pointer;
+		font-family:sans-serif;
+		text-align:center;
+	}
+	.Topbutton:hover{
+		background:#6AFB92;
+	}
+	
+	.primaryFitbutton{
+		display: inline-block;
+		font-size: 0.8em;
+		font-weight: 600;
+		height: 3.5em;
+		letter-spacing: 0.25em;
+		line-height: 3.5em;
+		padding: 0 1.75em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+		cursor: pointer;
+		font-family:sans-serif;
+		background-color: #ffffff;
+		box-shadow: none;
+		color: #242943;
+		border:none;
+	}
+	.primaryFitbutton:hover{
+		color: #9bf1ff;
+	}
+	
+	.fitbutton{
+		display: inline-block;
+		font-size: 0.8em;
+		font-weight: 600;
+		height: 3.5em;
+		letter-spacing: 0.25em;
+		line-height: 3.5em;
+		padding: 0 1.75em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+		cursor: pointer;
+		font-family:sans-serif;
+		background-color: darkgray;
+		box-shadow: none;
+		color: white;
+		border:none;
+	}
+	.fitbutton:hover{
+		color: #9bf1ff;
+	}
+	
+	.writebutton{
+		width:80px;
+		height:40px;
+		background: white;
+		cursor: pointer;
+		border: 1px solid #ccc;
+		border-top-right-radius:30px;
+		border-top-left-radius:10px;
+		border-bottom-left-radius:30px;
+		border-bottom-right-radius:10px;
+	}
+	.writebutton:hover{
+		background: darkgray;
+		color: white;
+	}
+	
+	
+	.contentViewbutton{
+		border: none;
+		background: none;
+		cursor: pointer;
+		width: auto;
+		height: auto;
+	}
+	.contentViewbutton:hover{
+		background: darkgray;
+		cursor: pointer;
+		color: white;
+	}
+	
+	.listPagingbutton{
+		padding:10px;
+		font-size: 10px;
+		border: 1px solid darkgray;
+		border-top-left-radius:5px;
+		border-top-right-radius:45px;
+		border-bottom-left-radius:45px;
+		border-bottom-right-radius:5px;
+		width: auto;
+		height: auto;
+		background:none;
+		color:darkgray;
+		cursor:pointer;
+	}
+	
+	.listPagingbutton:hover{
+		border: 1px solid black;
+		color:black;
+		cursor:pointer;
+	}
+	
+	
+	.memberListbutton{
+		border: none;
+		background: none;
+		font-family:sans-serif;
+		font-size: 30px;
+		font-weight: 500;
+		cursor: pointer;
+	}
+	.memberListbutton:hover{
+		text-decoration:underline;
+	}
+	
+	.bbsReplybutton{
+		border: none;
+		background: none;
+		font-family:sans-serif;
+		font-size:18px;
+		width:auto;
+		cursor: pointer;
+	}
+	.bbsReplybutton:hover{
+		background: darkgray;
+		cursor: pointer;
+		color: white;
+	}
+	
+	.bbsModifybutton{
+		border: none;
+		background: none;
+		font-family:sans-serif;
+		font-size:18px;
+		width:auto;
+		cursor: pointer;
+	}
+	.bbsModifybutton:hover{
+		background: darkgray;
+		cursor: pointer;
+		color: white;
+	}
+	
+	.bbsWritebutton{
+		border: none;
+		background: none;
+		font-family:sans-serif;
+		font-size:18px;
+		width:auto;
+		cursor: pointer;
+	}
+	.bbsWritebutton:hover{
+		background: darkgray;
+		cursor: pointer;
+		color: white;
+	}
+	
+	.contentUserbutton{
+		border: none;
+		background: none;
+		font-family:sans-serif;
+		font-size: 15px;
+		font-weight: 500;
+		cursor: pointer;
+	}
+	.contentUserbutton:hover{
+		text-decoration:underline;
+	}
+	
+	.contentTextbutton{
+		border: none;
+		background: none;
+		padding: 0px;
+		font-size: 18px;
+		cursor: pointer;
+	}
+	.contentTextbutton:hover{
+		text-decoration:underline;
+	}
+	
+	.contentTotalbutton{
+		border: none;
+		background: none;
+		padding: 0px;
+		font-size: 18px;
+		color: red;
+		cursor: pointer;
+	}
+	.contentTotalbutton:hover{
+		text-decoration:underline;
+	}
+	
+	.contentViewContentTotalbutton{
+		border: none;
+		background: none;
+		padding: 0px;
+		font-size: 30px;
+		color: red;
+		cursor: pointer;
+	}
+	.contentViewContentTotalbutton:hover{
+		text-decoration:underline;
+	}
+	
+	.CommentWritebutton{
+		background:skyblue; 
+		border:none; 
+		border-radius: 10px;
+		color:white;
+	}
+	.CommentWritebutton:hover{
+		cursor: pointer;
+		color: darkgray;
+	}
+	
+	.idAndPwdFindbutton{
+		cursor: pointer;
+		color: white;
+		border: none;
+		background: none;
+	}
+	
+	.CommentContentButton{
+		border: none;
+		border-radius: 10px;
+		color: white;
+		background: #66F8F0;
+	}
+	.CommentContentButton:hover{
+		cursor: pointer;
+		color: darkgray;
+	}
+	
+	.CommentModifyButton{
+		background: #FFBEBE;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		color: white;
+	}
+	.CommentModifyButton:hover{
+		cursor: pointer;
+		color: darkgray;
+	}
+	
+	.CommentReplyButton{
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		color: white;
+		background: #75FFCA;
+	}
+	.CommentReplyButton:hover{
+		cursor: pointer;
+		color: darkgray;
+	}

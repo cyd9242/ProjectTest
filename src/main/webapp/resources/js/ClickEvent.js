@@ -1,0 +1,6 @@
+/**
+ * 
+ */
+function Member(){
+	$('#form').submit();
+}

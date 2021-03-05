@@ -1,0 +1,23 @@
+@charset "UTF-8";
+ .a:visited { color: black; text-decoration: none;}
+ .a:link { color: red; text-decoration: none;}
+ /* #53e3fb */
+
+.userList:visited{text-decoration:none;}
+
+ 
+ a{text-decoration: none;}
+ a:hover{text-decoration:underline;}
+ 
+ .imageLink{
+ 	text-decoration: none !important;
+ }
+ .imageLink:visited{
+ 	text-decoration: none !important;
+ }
+ .imageLink:link{
+ 	text-decoration: none !important;
+ }
+ .imageLink:hover{
+ 	text-decoration: none !important;
+ }

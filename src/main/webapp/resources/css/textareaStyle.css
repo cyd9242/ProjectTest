@@ -1,0 +1,60 @@
+@charset "UTF-8";
+	
+	
+	.autosize { 
+		overflow: hidden; 
+		height: 250px;
+		border: none;
+		width: 100%; 
+		resize: none;
+		cursor: none;
+		pointer-events: none;
+	}
+	
+	.autosizeReply{
+		overflow: hidden;
+		height: 250px;
+		width: 100%; 
+		resize: none;
+	}
+	
+	.autosizeModify{
+		overflow: hidden;
+		height: 250px;
+		width: 100%; 
+		resize: none;
+	}
+	
+	.autosizeComment{
+		overflow: hidden;
+		height: 70px;
+		width: 100%; 
+		resize: none; 
+	}
+	
+	.autosizeCommentList{
+		overflow: hidden;
+		border: none;
+		background: none;
+		width: 100%; 
+		height: auto;
+		resize: none;
+		cursor: none;
+		pointer-events: none;
+	}
+	.bbsCommentModifyTextArea{
+		border: none;
+		background: none;
+		width: 100%; 
+		height: 100px;
+		resize: none;
+	}
+	
+	.bbsCommentReplyTextArea{
+		border: none;
+		background: none;
+		width: 100%; 
+		height: 100px;
+		resize: none;
+	}
+	

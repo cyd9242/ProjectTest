@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+	.ModifyModal{
+		display: none;
+		position: fixed;
+		z-index: auto;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 50%;
+		overflow: auto;
+		background-color: #F4FFFF;
+		border-radius:10px;
+	}
+	
+	.ReplyModal{
+		display: none;
+		position: fixed;
+		z-index: auto;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 50%;
+		height: auto;
+		overflow: auto;
+		background-color: #FFDCFF;
+		border-radius:10px;
+	}
