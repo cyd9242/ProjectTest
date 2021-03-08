@@ -54,8 +54,7 @@
 
 회원클릭시 회원이 작성한 게시글 ▼
 
-![MemberBulletinBoard_RGB](https://user-images.githubusercontent.com/80087199/110280190-c015e780-801d-11eb-8ad0-c45883840ef3.jpeg)
-
+![MemberBulletinBoard](https://user-images.githubusercontent.com/80087199/110287608-2a348980-802a-11eb-832c-c0e2a910f5b0.jpg)
 
 게시글 보기 ▼
 
@@ -72,7 +71,7 @@
 
 회원클릭시 회원이 작성한 댓글 ▼
 
-![MemberCommentBulletinBoard_RGB](https://user-images.githubusercontent.com/80087199/110280300-f0f61c80-801d-11eb-840d-bde3ad049006.jpeg)
+![MemberCommentBulletinBoard](https://user-images.githubusercontent.com/80087199/110287636-34ef1e80-802a-11eb-9f42-af24daebf3b6.jpg)
 
 게시글 수정 ▼
 
