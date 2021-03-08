@@ -504,6 +504,19 @@
 		text-decoration:underline;
 	}
 	
+	.headerMemBerListbutton{
+		border: none;
+		background: none;
+		font-family:sans-serif;
+		font-size: 52px;
+		font-weight: bold;
+		color: white;
+		cursor: pointer;
+	}
+	.headerMemBerListbutton:hover{
+		text-decoration:underline;
+	}
+	
 	.bbsReplybutton{
 		border: none;
 		background: none;
