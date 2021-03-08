@@ -9,6 +9,7 @@
 <link href="<c:url value="/resources/css/tableStyle.css" />" rel="stylesheet">
 <link href="<c:url value="/resources/css/buttonStyle.css" />" rel="stylesheet">
 <link href="<c:url value="/resources/css/anchorStyle.css" />" rel="stylesheet">
+<link href="<c:url value="/resources/css/labelStyle.css" />" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/resources/assets/css/main.css" />
 <noscript><link href="<c:url value="/resources/assets/css/noscript.css" />" rel="stylesheet"></noscript>
@@ -57,7 +58,26 @@
 				</span>
 				<header class="major">
 					<div align = "center">
-						<h1 style = "color:white; font-family:sans-serif;">가상 홈페이지: 자유 게시판</h1>
+						<div class = "HeadermemberNickNameDivStyle">
+							<c:if test = "${user ne null && NickName ne null}">
+								<c:if test="${pageContext.request.userPrincipal.name eq user}">
+									&nbsp;<a href = "/virtualHomePage/MemberInformation"><button class = "headerMemBerListbutton">${NickName}(${MaskingUser})님</button></a><br/><br/>
+									<h4 style = "color: white; font-family:sans-serif">
+										총 게시글 : <a style = "text-decoration:none; color: orange;" href = "/virtualHomePage/virtualMemberBulletinBoard?page=1&vId=${user}">&nbsp;&nbsp;${totalList}</a> 개
+										&nbsp;&nbsp;&nbsp;총 댓글 : <a style = "text-decoration:none; color: orange;" href = "/virtualHomePage/virtualMemberCommentBulletinBoard?page=1&vId=${user}">&nbsp;&nbsp;${CommentTotalList}</a> 개
+									</h4>
+								</c:if>
+								<c:if test="${pageContext.request.userPrincipal.name ne user}">
+									<h1 style = "color:white; font-family:sans-serif;">
+										&nbsp;&nbsp;&nbsp;&nbsp;${NickName}(${MaskingUser})님
+									</h1>
+									<h4 style = "color: white; font-family:sans-serif">
+										총 게시글 : <a style = "text-decoration:none; color: orange;" href = "/virtualHomePage/virtualMemberBulletinBoard?page=1&vId=${user}">&nbsp;&nbsp;${totalList}</a> 개
+										&nbsp;&nbsp;&nbsp;총 댓글 : <a style = "text-decoration:none; color: orange;" href = "/virtualHomePage/virtualMemberCommentBulletinBoard?page=1&vId=${user}">&nbsp;&nbsp;${CommentTotalList}</a> 개
+									</h4>
+								</c:if>
+							</c:if>
+						</div>
 					</div>
 				</header>
 			</div>
@@ -70,22 +90,6 @@
 				<div class="inner" align = "center">
 					<header>
 						<div class = "bbsMemberListDivStyle">
-							<br/>
-							<div align = "center">
-								<div class = "memberNickNameDivStyle">
-									<c:if test = "${user ne null && NickName ne null}">
-										<c:if test="${pageContext.request.userPrincipal.name eq user}">
-											&nbsp;<a href = "/virtualHomePage/MemberInformation"><button class = "memberListbutton">${NickName}(${MaskingUser})</button></a>
-										</c:if>
-										<c:if test="${pageContext.request.userPrincipal.name ne user}">
-											&nbsp;&nbsp;&nbsp;&nbsp;<label style = "font-size:30px; font-weight:bold; font-family:sans-serif;">${NickName}(${MaskingUser})</label>
-										</c:if>
-									</c:if>
-									<br/>
-									&nbsp;&nbsp;&nbsp;<label>총 게시글 :</label> <label style = "color:orange;"><a href = "/virtualHomePage/virtualMemberBulletinBoard?page=1&vId=${user}">${totalList}</a></label> <label>개</label>
-									&nbsp;<label>총 댓글 : </label><label style = "color:orange;"><a href = "/virtualHomePage/virtualMemberCommentBulletinBoard?page=1&vId=${user}">${CommentTotalList}</a></label> <label>개</label>
-								</div>							
-							</div>
 							<br/>
 							<table border = "1" cellpadding = "5" cellspacing = "0" class = "bbsMemberListTableStyle">
 								<thead>
