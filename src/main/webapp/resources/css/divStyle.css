@@ -300,6 +300,13 @@
 		height: auto;
 	}
 	
+	.HeadermemberNickNameDivStyle{
+		border: 1px solid #ccc;
+		border-radius:20px;
+		text-align: center;
+		width: 100%;
+		height: auto;
+	}
 	
 	/* 댓글 영역 */
 	.commentDivStyle{
