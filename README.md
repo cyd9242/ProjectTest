@@ -1,4 +1,4 @@
 # ProjectTest
 HomePageImage
-![HomePage_1](https://user-images.githubusercontent.com/80087199/110276150-e3d52f80-8015-11eb-9497-dd31aa11177c.jpg)
-![HomePage_2](https://user-images.githubusercontent.com/80087199/110276225-07987580-8016-11eb-978e-a992be3b1dcd.jpg)
+![HomePage_1_RGB](https://user-images.githubusercontent.com/80087199/110276899-7fb36b00-8017-11eb-9743-fb5fb52af247.jpeg)
+![HomePage_2_RGB](https://user-images.githubusercontent.com/80087199/110276909-8215c500-8017-11eb-9acc-82f2e83c27c6.jpeg)
