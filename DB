@@ -1,1 +1,63 @@
+/*          회원관련 DB         */
+create table virtual_member(
+  vId varchar2(20) not null primary key,
+  vPwd varchar2(20) not null,
+  vNickName varchar2(20) not null,
+  vName varchar2(50) not null,
+  vBirth varchar2(20) not null,
+  vGender varchar2(10) not null,
+  vEmail varchar2(50) not null,
+  vTel varchar2(13) not null,
+  vPostcode varchar2(8) not null,
+  vAddress1 varchar2(100) not null,
+  vAddress2 varchar2(50) not null,
+  vDate timestamp default sysdate,
+  vMemberModificationDate timestamp,
+  enabled number(10) default 1 NOT NULL
+);
 
+create table user_roles(
+  vId varchar2(20) not null,
+  role_name varchar2(15),
+  constraint roles_pk primary key(vid, role_name),
+  constraint roles_user_fk foreign key(vId) references virtual_member(vId)
+);
+
+
+
+/*          게시판 관련 DB         */
+create table virtual_bbs(
+  vNo number(3) primary key,
+  vId varchar2(20) not null,
+  vNickName varchar(20) not null,
+  vSubject varchar2(80) not null,
+  vContent VARCHAR2(3000) not null,
+  vDate timestamp default sysdate,
+  vHit number(5) default 0,
+  vCommentCount number(5) default 0,
+  vGroup number(4),
+  vStep number(4),
+  vIndent number(4)
+);
+create sequence seq_vbbs;
+alter sequence seq_vbbs nocache;
+
+
+
+/*          댓글 관련 DB          */
+create table virtual_bbs_comment(
+  vCommentNo number(3) not null primary key,  
+  vNo number(3) not null,             
+  vCommentContent VARCHAR2(1000) not null,
+  vId varchar2(20) not null,
+  vNickName varchar(20) not null,
+  vCommentDate timestamp default sysdate,     
+  vUpdatedate timestamp,
+  vCommentGroup number(4),
+  vCommentStep number(4),
+  vCommentIndent number(4),
+  constraint comment_fk foreign key(vNo)
+  references virtual_bbs(vNo) ON DELETE cascade
+);
+create sequence comment_seq;
+alter sequence comment_seq nocache;
